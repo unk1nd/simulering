@@ -42,7 +42,7 @@ public class GUI extends JFrame
 		// test med database
 		//DBConnection test = new DBConnection();
 		//test.getSomething();
-		System.out.println("Velykket innlogging");
+		System.out.println("Innlogging: OK");
 	}
 
 }
