@@ -10,7 +10,7 @@ import java.sql.Timestamp;
 
 public class DBConnection 
 {
-	private static String dburl = "jdbc:mysql://sandbox.kiiw.org:3306/gruppe2";
+	private static String dburl = "jdbc:mysql://jenna.bendiksens.net:3306/bob";
 	
 	public DBConnection()
 	{
@@ -31,9 +31,9 @@ public class DBConnection
 
 		try
 		{ 
-            Connection conn = DriverManager.getConnection(dburl,"gruppe2","gruppe2"); 
+            Connection conn = DriverManager.getConnection(dburl,"bob","bob123"); 
 
-            String sql_Q ="SELECT * FROM news";
+            String sql_Q ="SELECT * FROM simulering";
     		PreparedStatement query = conn.prepareStatement(sql_Q);
     		ResultSet result = query.executeQuery();
     		System.err.println("Connection");
@@ -50,5 +50,8 @@ public class DBConnection
 			System.out.println(e);
 		}
 	}
+	
+	
+
 
 }

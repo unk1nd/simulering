@@ -26,7 +26,7 @@ public class GUI extends JFrame
 
 	GUI()
 	{
-		super("Welcome");
+		super("Velkommen");
 		setSize(800,500);
 		setLocation(500,280);
 		panel.setLayout (null); 
@@ -40,8 +40,9 @@ public class GUI extends JFrame
 		setVisible(true);
 		
 		// test med database
-		DBConnection test = new DBConnection();
-		test.getSomething();
+		//DBConnection test = new DBConnection();
+		//test.getSomething();
+		System.out.println("Velykket innlogging");
 	}
 
 }
