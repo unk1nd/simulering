@@ -14,4 +14,10 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<variableList>
+		<variable>
+			<name>db</name>
+			<value>file:/Users/unk1nd/Documents/workspace/simulering/src/mysql-connector-java-5.0.8-bin.jar</value>
+		</variable>
+	</variableList>
 </projectDescription>

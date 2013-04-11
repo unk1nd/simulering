@@ -9,19 +9,38 @@
 package core;
 
 import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
 
-public class GUI extends JFrame
+
+public class GUI extends JFrame 
 {
+
 	public static void main(String[] args) 
 	{
-		JFrame frame = new JFrame ("Simulering");
-		frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
-		frame.setSize(800, 500);
- 	   	frame.setResizable(false);
- 	   	frame.setLocationRelativeTo(null);
- 	   	frame.setVisible(true);
- 	   	
- 	   	
+		GUI frameTabel = new GUI();
+	}
+
+	JLabel welcome = new JLabel("Welcome to a New Frame");
+	JPanel panel = new JPanel();
+
+	GUI()
+	{
+		super("Welcome");
+		setSize(800,500);
+		setLocation(500,280);
+		panel.setLayout (null); 
+
+		welcome.setBounds(70,50,150,60);
+
+		panel.add(welcome);
+
+		getContentPane().add(panel);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setVisible(true);
+		
+		DBConnection test = new DBConnection();
+		test.getSomething();
 	}
 
 }
