@@ -53,8 +53,7 @@ public class login extends JFrame
 				} 
 				else 
 				{
-
-					JOptionPane.showMessageDialog(null,"Wrong Password / Username");
+					JOptionPane.showMessageDialog(null,"Feil Passord / Brukernavn");
 					txuser.setText("");
 					pass.setText("");
 					txuser.requestFocus();

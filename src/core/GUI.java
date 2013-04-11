@@ -21,7 +21,7 @@ public class GUI extends JFrame
 		GUI frameTabel = new GUI();
 	}
 
-	JLabel welcome = new JLabel("Welcome to a New Frame");
+	JLabel welcome = new JLabel("Innlogget");
 	JPanel panel = new JPanel();
 
 	GUI()
@@ -31,7 +31,7 @@ public class GUI extends JFrame
 		setLocation(500,280);
 		panel.setLayout (null); 
 
-		welcome.setBounds(70,50,150,60);
+		welcome.setBounds(10, 10, 800, 500);
 
 		panel.add(welcome);
 
@@ -39,6 +39,7 @@ public class GUI extends JFrame
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
 		
+		// test med database
 		DBConnection test = new DBConnection();
 		test.getSomething();
 	}

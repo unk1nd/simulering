@@ -37,6 +37,12 @@ public class DBConnection
     		PreparedStatement query = conn.prepareStatement(sql_Q);
     		ResultSet result = query.executeQuery();
     		System.err.println("Connection");
+    		
+    		while(result.next())
+			{	
+				String title = result.getString("title");
+				System.out.println(title);
+			}
 		
 		}
 		catch (SQLException e)
