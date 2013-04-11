@@ -1,0 +1,4 @@
+simulering
+==========
+
+av gruppe2
